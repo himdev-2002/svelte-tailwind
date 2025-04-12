@@ -56,3 +56,6 @@ To publish your library to [npm](https://www.npmjs.com):
 ```bash
 npm publish
 ```
+
+## Paraglide
+TRANSLATIION using https://fink.inlang.com/
