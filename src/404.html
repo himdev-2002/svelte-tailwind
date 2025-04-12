@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Page Not Found</title>
+		<script>
+			// If the user directly visits an unknown route, redirect to the Svelte app's index.html
+			if (window.location.pathname !== '/') {
+				window.location.replace('/');
+			}
+		</script>
+	</head>
+	<body>
+		<h1>404 - Page Not Found</h1>
+		<p>Redirecting you back...</p>
+	</body>
+</html>
