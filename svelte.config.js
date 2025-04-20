@@ -12,7 +12,12 @@ const config = {
 			fallback: '404.html', // may differ from host to host
 			precompress: false,
 			strict: true
-		})
+		}),
+		kit: {
+			alias: {
+				"@/*": "./src/lib/*",
+			},
+		}
 	}
 };
 

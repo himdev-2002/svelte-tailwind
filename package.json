@@ -9,11 +9,13 @@
 		"prepack": "svelte-kit sync && svelte-package && publint",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"format": "prettier --write .","start": "",
+		"format": "prettier --write .",
+		"start": "",
 		"lint": "prettier --check . && eslint .",
 		"test:unit": "vitest",
 		"test": "npm run test:unit -- --run",
-		"paraglide:compile": "npx @inlang/paraglide-js compile --project ./project.inlang --outdir ./src/lib/sparaglide"
+		"inlang:compile": "npx @inlang/paraglide-js compile --project ./project.inlang --outdir ./src/lib/sparaglide",
+		"inlang:translate": "npx @inlang/cli machine translate --project project.inlang"
 	},
 	"files": [
 		"dist",
@@ -38,6 +40,7 @@
 	"devDependencies": {
 		"@eslint/compat": "^1.2.8",
 		"@eslint/js": "^9.24.0",
+		"@inlang/cli": "^3.0.10",
 		"@internationalized/date": "^3.8.0",
 		"@lucide/svelte": "^0.487.0",
 		"@sveltejs/adapter-static": "^3.0.8",
