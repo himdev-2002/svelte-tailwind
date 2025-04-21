@@ -13,11 +13,9 @@ const config = {
 			precompress: false,
 			strict: true
 		}),
-		kit: {
-			alias: {
-				"@/*": "./src/lib/*",
-			},
-		}
+		alias: {
+			"@/*": "./src/lib/*",
+		},
 	}
 };
 
