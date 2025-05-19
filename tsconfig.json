@@ -14,7 +14,7 @@
 		"target": "esnext",
 		"module": "esnext",
 		"moduleResolution": "Bundler",
-		// "paths": {
+		"allowArbitraryExtensions": true		// "paths": {
 		// 	"$lib": ["./src/lib"],
       	// 	"$lib/*": ["./src/lib/*"]
 		// }

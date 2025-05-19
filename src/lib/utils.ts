@@ -11,6 +11,7 @@ export function cn(...inputs: ClassValue[]) {
 
 export const isBrowser = typeof document !== 'undefined';
 
+
 export function slugFromPath(path: string) {
 	return path.replace('/src/content/', '').replace('.md', '');
 }

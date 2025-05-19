@@ -4,6 +4,7 @@ import { enhancedImages } from '@sveltejs/enhanced-img';
 import { svelteTesting } from '@testing-library/svelte/vite';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
+import myPlugin from './middleware/my_plugin';
 
 import path from 'path';
 
@@ -13,6 +14,7 @@ export default defineConfig({
 		// tailwindcss(),
 		enhancedImages(),
 		sveltekit(),
+		myPlugin,
 		paraglideVitePlugin({
 			project: './project.inlang',
 			outdir: './src/lib/paraglide'
@@ -46,6 +48,7 @@ export default defineConfig({
 	resolve: {
 		alias: {
 			$lib: path.resolve("./src/lib"),
+			$store: path.resolve("./src/stores"),
 		},
 	}
 });

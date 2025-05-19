@@ -4,6 +4,7 @@
 	import { Input } from '$lib/components/ui/input';
 	import { Label } from '$lib/components/ui/label';
 	import { cn } from '$lib/utils';
+	import { m } from '$lib/paraglide/messages.js';
 
 	let className: string | undefined | null = undefined;
 	export { className as class };
@@ -26,10 +27,22 @@
 				<Input
 					class=""
 					id="email"
-					placeholder="name@example.com"
+					placeholder="your@email.com"
 					type="email"
 					autocapitalize="none"
 					autocomplete="email"
+					autocorrect="off"
+					disabled={isLoading}
+				/>
+			</div>
+			<div class="grid gap-1">
+				<Label class="sr-only" for="password">{m["signin.password"]()}</Label>
+				<Input
+					class=""
+					id="password"
+					placeholder="********"
+					type="password"
+					autocapitalize="none"
 					autocorrect="off"
 					disabled={isLoading}
 				/>
@@ -38,11 +51,11 @@
 				{#if isLoading}
 					<Icons.spinner class="mr-2 h-4 w-4 animate-spin" />
 				{/if}
-				Sign In with Email
+				{m["signin.lbl"]()}
 			</Button>
 		</div>
 	</form>
-	<div class="relative">
+	<!-- <div class="relative">
 		<div class="absolute inset-0 flex items-center">
 			<span class="w-full border-t"></span>
 		</div>
@@ -51,11 +64,11 @@
 		</div>
 	</div>
 	<Button class="" variant="outline" type="button" disabled={isLoading}>
-		{#if isLoading}
+		{#if isLoading }
 			<Icons.spinner class="mr-2 h-4 w-4 animate-spin" />
 		{:else}
 			<Icons.gitHub class="mr-2 h-4 w-4" />
 		{/if}
 		GitHub
-	</Button>
+	</Button> -->
 </div>

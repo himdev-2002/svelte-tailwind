@@ -6,5 +6,15 @@
 	"contact": "Contact",
 	"settings": "Settings",
 	"language": "Language",
-	"theme": "Theme"
+	"theme": "Theme",
+	"quote": {
+		"author": "(Hadith, Al-Bayhaqi in Shu'ab al-Iman, no. 5310)",
+		"text": "Verily, Allah loves when one of you performs a deed, that he does it with excellence."
+	},
+	"signin": {
+		"lbl": "Sign In",
+		"password": "Password",
+		"txt": "Enter your email and password below",
+		"email": "Email Address"
+	}
 }

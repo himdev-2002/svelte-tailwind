@@ -6,5 +6,15 @@
 	"contact": "Kontak",
 	"settings": "Pengaturan",
 	"language": "Bahasa",
-	"theme": "Tema"
+	"theme": "Tema",
+	"quote": {
+		"author": "(HR. al-Baihaqi dalam Syu'ab al-Iman, no. 5310)",
+		"text": "Sesungguhnya Allah mencintai seseorang yang jika bekerja, ia menyempurnakan pekerjaannya."
+	},
+	"signin": {
+		"lbl": "Masuk",
+		"password": "Kata sandi",
+		"txt": "Masukkan email dan kata sandi Anda di bawah ini",
+		"email": "Alamat Email"
+	}
 }
